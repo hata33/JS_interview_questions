@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // let cat = {
+    //   years: 1,
+    //   get age() {
+    //     return this.years;
+    //   },
+    //   set age(newAge) {
+    //     this.years = newAge;
+    //   }
+    // }
+    // 'use strict'
+    // function doAdd(num1, num2) {
+    //   arguments[1] = 10;
+    //   console.log(arguments[0] + num2);
+    // }
+    // doAdd(30, 60) //90
+
+    // 扩展参数
+    // let arr = [1, 2, 3, 4]
+    // function sum() {
+    //   var sum = 0;
+    //   console.log(sum);
+    // }
+    // console.log(sum);
+    // console.log(sum())
+
+    // 使用构造函数
+    function Person(name, age, job) {
+      this.name = name;
+      this.age = age;
+      this.job = job;
+      this.sayName = function () {
+        console.log(this.name);
+      };
+    }
+    // let person1 = new Person("Nicholas", 29, "Software Engineer");
+    // let person2 = new Person("Greg", 27, "Doctor");
+
+    // console.log(person1.constructor === Person)
+
+    let person = new Person('hata', 22, 'Sofware Engineer');
+    person.sayName();
+
+    Person('greg', 27, "Doctor");
+    // window.sayName();
+  </script>
+</body>
+
+</html>
